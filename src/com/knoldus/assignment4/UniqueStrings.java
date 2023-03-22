@@ -2,7 +2,7 @@ package com.knoldus.assignment4;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
-public class Main
+public class UniqueStrings
 {
     public static void main(String[] args)
     {

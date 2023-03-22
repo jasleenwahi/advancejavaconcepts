@@ -22,7 +22,8 @@ public class Dish
         return "Dish{" + "dishId=" + dishId + ", dishName='" + dishName + '\'' + ", creationTime=" + creationTime + '}';
     }
     //using inner class to create menu class
-    class Menu {
+    class Menu
+    {
         static ArrayList<Dish> MENU_LIST = new ArrayList<>();
         static
         {

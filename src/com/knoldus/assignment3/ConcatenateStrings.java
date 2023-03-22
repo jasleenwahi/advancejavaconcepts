@@ -3,6 +3,7 @@ package com.knoldus.assignment3;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 public class ConcatenateStrings
 {
@@ -19,8 +20,8 @@ public class ConcatenateStrings
         }
     //concatenating and converting to uppercase
         Supplier<String> concatenateString = () ->{
-            String concatenatedString = String.join("", listToConcatenate);
-            return concatenatedString.toUpperCase();
+            String concatenatedString = listToConcatenate.stream().map(String::toUpperCase).collect(Collectors.joining());
+            return concatenatedString;
         };
         System.out.println("Concatenated string: "+concatenateString.get());
 
