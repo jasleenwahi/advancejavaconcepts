@@ -12,7 +12,7 @@ public class Restaurant
             System.out.println(dish);
         }
     }
-    //function to find a list
+    //function to find a dish
     public void findDish(Integer inputId)
     {
         for (Dish dish: Dish.Menu.MENU_LIST)
